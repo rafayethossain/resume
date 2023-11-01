@@ -1,1 +1,1 @@
-# rafayet.analyst.github.io
+# rafayetanalyst.github.io
