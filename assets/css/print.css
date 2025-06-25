@@ -14,6 +14,9 @@
   .sidebar, .progress-bar, .hamburger, .download-btn, .social-links, nav.nav {
     display: none !important;
   }
+  .print-btn, .download-btn, .sidebar .nav a.download-btn {
+    display: none !important;
+  }
   .main-content {
     margin: 0 !important;
     padding: 0 !important;
@@ -35,13 +38,8 @@
     opacity: 1 !important;
     transform: none !important;
     page-break-inside: avoid;
-  }
-  .section-title {
-    color: #8f5bb2 !important;
-    border-left: 3px solid #b57edc !important;
-    padding-left: 0.5rem !important;
-    font-size: 1.1rem !important;
-    margin-bottom: 0.5rem !important;
+    page-break-after: auto !important;
+    page-break-before: auto !important;
   }
   .card {
     background: #fff !important;
@@ -75,6 +73,11 @@
   /* Remove page breaks inside sections */
   .section, .card, .container {
     page-break-inside: avoid !important;
+  }
+  /* Prevent content breakage */
+  .container, .section, .card, table, tr, td, th {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
   /* Hide print-unfriendly elements */
   .skip-link {
