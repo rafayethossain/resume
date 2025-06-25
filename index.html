@@ -2,413 +2,439 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rafayet Hossain | Resume</title>
+  <meta name="description" content="Resume of Rafayet Hossain, IT Business Analyst & Project Manager">
+  <meta name="author" content="Rafayet Hossain">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="assets/css/resume.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <meta name="description" content="Looking for a seasoned IT Business Analyst and Project Manager to guarantee your project's success? Rafayet Hossain brings over five years of professional experience in the software industry, specializing in delivering successful projects to government, non-government, and multinational clients. With expertise in project management, system analysis, software requirements, quality assurance, and stakeholder management, Rafayet is your catalyst for digital transformation. Contact today to redefine your project's path to success.">
-    <meta name="author" content="Rafayet Hossain">
-    <title> Rafayet Hossain | IT Business Analyst & Project Manager</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!--w3 framework -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-        rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="assets/css/resume.min.css" rel="stylesheet">
-    <style>
-        div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 300px;
-            height: 250px;
-        }
+    :root {
+      --lavender: #b57edc;
+      --lavender-dark: #8f5bb2;
+      --lavender-light: #f3e8fd;
+      --text-main: #23272f;
+      --text-muted: #6b7280;
+      --bg-main: #f7f8fa;
+      --bg-card: #fff;
+      --bg-card-alt: #f3e8fd;
+    }
 
-        div.gallery:hover {
-            border: 1px solid #777;
-            opacity: .9;
-        }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row;
+    }
 
-        div.gallery img {
-            width: 100%;
-            height: 240px;
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #b57ee6 0%, #a084ca 100%); /* Lavender gradient */
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.2s;
+    }
 
-        }
+    .sidebar {
+      width: 270px;
+      background: #fff;
+      box-shadow: 2px 0 16px rgba(34, 40, 49, 0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      z-index: 100;
+      padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+      border-right: 1.5px solid #ede9f7;
+      background: linear-gradient(180deg, #f6f3fa 0%, #fff 100%);
+    }
 
-        div.desc {
-            padding: 15px;
-            text-align: center;
-        }
+    .sidebar .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #b57ee6; /* Lavender border */
+      box-shadow: 0 2px 8px rgba(181, 126, 230, 0.10);
+      margin-bottom: 1.2rem;
+      background: #ede9f7;
+      display: block;
+    }
 
-        a:hover {
-            text-decoration: none;
-        }
-    </style>
+    .sidebar h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #a084ca; /* Lavender */
+      margin: 0 0 0.5rem 0;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .sidebar .subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: #8d8da9;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    .sidebar .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar .nav a {
+      color: #23272f;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 0.8rem;
+      border-radius: 0.4rem;
+      transition: background 0.2s, color 0.2s;
+      text-align: center;
+      scroll-behavior: smooth;
+      letter-spacing: 0.2px;
+    }
+
+    .sidebar .nav a.active,
+    .sidebar .nav a:hover {
+      background: #b57ee6;
+      color: #fff;
+    }
+
+    .sidebar .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar .social-links a {
+      color: #b57ee6;
+      font-size: 1.3rem;
+      transition: color 0.2s;
+    }
+
+    .sidebar .social-links a:hover {
+      color: #a084ca;
+    }
+
+    .main-content {
+      flex: 1 1 0%;
+      margin-left: 270px;
+      padding: 2.5rem 0 2.5rem 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(180deg, #f6f3fa 0%, #fff 100%);
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      padding: 2rem 1.5rem;
+      background: #fff;
+      border-radius: 1.25rem;
+      box-shadow: 0 4px 32px rgba(181, 126, 230, 0.07);
+      border: 1.5px solid #ede9f7;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+      scroll-margin-top: 2rem;
+      transition: background 0.3s;
+      border-radius: 1rem;
+    }
+
+    .section:target {
+      background: #ede9f7;
+      transition: background 0.3s;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #a084ca;
+      margin-bottom: 1rem;
+      border-left: 4px solid #b57ee6;
+      padding-left: 0.75rem;
+      letter-spacing: 0.2px;
+    }
+
+    .info-list,
+    .skills-list,
+    .awards-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-list li,
+    .skills-list li,
+    .awards-list li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: #4b496e;
+    }
+
+    .card {
+      background: #f6f3fa;
+      border-radius: 0.75rem;
+      padding: 1.25rem 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 4px rgba(181, 126, 230, 0.04);
+      border: 1px solid #ede9f7;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #b57ee6;
+      color: #fff;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      margin: 1.5rem auto 0 auto;
+      text-align: center;
+      transition: background 0.2s;
+      box-shadow: 0 1px 4px rgba(181, 126, 230, 0.08);
+    }
+
+    .download-btn:hover {
+      background: #a084ca;
+    }
+
+    @media (max-width: 900px) {
+      .sidebar {
+        position: static;
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-shadow: none;
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        border-right: none;
+        background: #fff;
+      }
+
+      .sidebar .profile-img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+
+      .sidebar h1,
+      .sidebar .subtitle {
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      .sidebar .nav {
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-bottom: 0;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 1.5rem 0 1.5rem 0;
+        background: #f6f3fa;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem 0.5rem;
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"> <span class="d-block d-lg-none">Rafayet
-                Hossain</span> <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/images/Rafayet DP.png" alt="Portrait of Rafayet Hossain, IT Business Analyst & Project Manager">
-            </span> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-                class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#about">About</a> </li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#experience">Experience</a> </li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#education">Education</a> </li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#skills">Skills</a> </li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#recentWork">Recent Work</a> </li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#interests">Interests</a> </li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#awards">Awards</a> </li>
-            </ul>
-        </div>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <aside class="sidebar" aria-label="Sidebar">
+    <img src="assets/images/Rafayet%20DP.png" alt="Portrait of Rafayet Hossain, IT Business Analyst & Project Manager"
+      class="profile-img" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Rafayet+Hossain&background=b57ee6&color=fff&size=120';">
+    <h1>Rafayet Hossain</h1>
+    <div class="subtitle">IT Business Analyst & Project Manager</div>
+    <nav class="nav" aria-label="Main Navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#awards">Awards</a>
+      <a href="#interests">Interests</a>
+      <a href="assets/images/Rafayet_BSA_SQA.pdf" class="download-btn" download style="margin:0;">Resume PDF</a>
     </nav>
-    <div class="container-fluid p-0">
-        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div class="my-auto">
-                <h1 class="mb-0">
-                    <span class="text-primary">Rafayet</span> Hossain
-                </h1>
-                <div class="subheading mb-5">Jahanara Villa, Road# 15/3, Khapara, Khilkhet,Dhaka, Cell · (+88)
-                    01710-493613 · <a href="mailto:rafayet14@email.com">rafayet14@email.com</a> </div>
-                <p>☑ Certified Lean Six Sigma Black Belt ☑ IT Business Analyst ☑ Project Manager (Open to
-                    Work) </p>
-                <p class="mb-5">
-                    I'm an experienced IT Business Analyst and Project Manager with five years in software. I specialize in guiding projects from start to finish, transforming businesses along the way. My deep knowledge of business processes and technologies make me well-equipped to handle complex ventures, and I've excelled in delivering successful projects for government, non-government, and multinational clients.
-                </p>
-                <ul class="list-inline list-social-icons mb-0">
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/rafayethossain" target="_blank"> <span
-                                class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span> </a>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/rafayethossain13" target="_blank"> <span
-                                class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span> </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.twitter.com/rafayethossain" target="_blank"> <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span> </a>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <a href="https://github.com/rafayet13" target="_blank"> <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span> </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-            <div class="my-auto">
-                <h2 class="mb-5">Experience</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"> System Analyst</h3>
-                        <div class="subheading mb-3">TechnoVista Ltd.</div>
-                        <p> Responsibilities </p>
-                        <ul class="fa-ul mb-0">
-                            <li> <i class="fa-li fa fa-check"></i> Initiate, Organize, and Prepare Technical
-                                RFP/RFQ Responses </li>
-                            <li> <i class="fa-li fa fa-check"></i> Stakeholder Identification & Meeting </li>
-                            <li> <i class="fa-li fa fa-check"></i> Requirement Elicitation</li>
-                            <li> <i class="fa-li fa fa-check"></i> Requirement Management</li>
-                            <li> <i class="fa-li fa fa-check"></i> BRD, SRS Preparation</li>
-                            <li> <i class="fa-li fa fa-check"></i> Wireframing and User Interface (UI) Design</li>
-                            <li> <i class="fa-li fa fa-check"></i> Solution Design, Client Briefing, and Requirement
-                                Approval</li>
-                            <li> <i class="fa-li fa fa-check"></i> Business Knowledge Transformation & Presentation</li>
-                            <li> <i class="fa-li fa fa-check"></i> Performing System Test & UAT</li>
-                            <li> <i class="fa-li fa fa-check"></i> Manage Change Request (CR)</li>
-                            <li> <i class="fa-li fa fa-check"></i> Reporting Project Manager, Stakeholder, and Upper
-                                Management</li>
-                        </ul>
-
-                    </div>
-
-                    <div class="resume-date text-md-right"> <span class="text-primary">June 2021 - Present</span> </div>
-                </div>
-
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"> Quality Assurance Engineer</h3>
-                        <div class="subheading mb-3">TechnoVista Ltd.</div>
-                        <p> Responsibilities </p>
-                        <ul class="fa-ul mb-0">
-                            <li> <i class="fa-li fa fa-check"></i> Preparing Test Plan </li>
-                            <li> <i class="fa-li fa fa-check"></i> Preparing Test Case </li>
-                            <li> <i class="fa-li fa fa-check"></i> Software Test Execution</li>
-                            <li> <i class="fa-li fa fa-check"></i> Bug Reporting & Tracking</li>
-                            <li> <i class="fa-li fa fa-check"></i> Prepare Technical Documents</li>
-                            <li> <i class="fa-li fa fa-check"></i> End User Support & Training </li>
-                            <li> <i class="fa-li fa fa-check"></i> Perform Internal Quality Audit</li>
-                            <li> <i class="fa-li fa fa-check"></i> Prepare & Submit Audit Report</li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-date text-md-right"> <span class="text-primary">August 2018 - June 2021</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"> Software Engineer</h3>
-                        <div class="subheading mb-3">Wardan Tech Ltd.</div>
-                        <p> Responsibilities </p>
-                        <ul class="fa-ul mb-0">
-                            <li> <i class="fa-li fa fa-check"></i> Coding </li>
-                            <li> <i class="fa-li fa fa-check"></i> Testing & Debugging </li>
-                            <li> <i class="fa-li fa fa-check"></i> Documentation</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right"> <span class="text-primary">January 2018 - August 2018</span>
-                    </div>
-                </div>
-            </div>
-
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/rafayethossain" aria-label="LinkedIn" target="_blank"><i
+          class="fa fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/rafayethossain13" aria-label="Facebook" target="_blank"><i
+          class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com/rafayethossain" aria-label="Twitter" target="_blank"><i
+          class="fa fa-twitter"></i></a>
+      <a href="https://github.com/rafayet13" aria-label="GitHub" target="_blank"><i class="fa fa-github"></i>
+      </a>
     </div>
-    </section>
-
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-            <h2 class="mb-5">Education</h2>
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">Shanto-Mariam University of Creative Technology</h3>
-                    <div class="subheading mb-3">Bachelor of Science</div>
-                    <div>Computer Science </div>
-                    <p>GPA: 3.74 (Out of 4)</p>
-                </div>
-                <div class="resume-date text-md-right"> <span class="text-primary">October 2013 - March 2018</span>
-                </div>
-            </div>
-            <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">Poyalgacha Degree College</h3>
-                    <div class="subheading mb-3">Science</div>
-                    <p>GPA: 3.70 (Out of 5)</p>
-                </div>
-                <div class="resume-date text-md-right"> <span class="text-primary">Passing Year: 2013</span> </div>
-            </div>
-            <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">Poyalgacha High School</h3>
-                    <div class="subheading mb-3">Science</div>
-                    <p>GPA: 4.44 (Out of 5)</p>
-                </div>
-                <div class="resume-date text-md-right"> <span class="text-primary">Passing Year: 2009</span> </div>
-            </div>
+  </aside>
+  <main class="main-content">
+    <div class="container">
+      <section class="section" id="about">
+        <div class="section-title">About</div>
+        <div class="card">
+          <ul class="info-list">
+            <li><strong>Location:</strong> Jahanara Villa, Road# 15/3, Khapara, Khilkhet, Dhaka</li>
+            <li><strong>Phone:</strong> (+88) 01710-493613</li>
+            <li><strong>Email:</strong> <a href="mailto:rafayet14@email.com">rafayet14@email.com</a></li>
+          </ul>
+          <p>Certified Lean Six Sigma Black Belt. Experienced in project management, system analysis, software
+            requirements, quality assurance, and stakeholder management. Over five years of professional
+            experience delivering successful projects for government, non-government, and multinational
+            clients.</p>
         </div>
-    </section>
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-            <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul class="list-inline list-icons">
-                <li class="list-inline-item"> <i class="devicons devicons-html5"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-css3"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-javascript"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-bootstrap"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-git"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-linux"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-php"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-python"></i> </li>
-                <li class="list-inline-item"> <i class="devicons devicons-laravel"></i> </li>
-            </ul>
-
-            <ul>
-                <li>Programming/Scripting: <code>C/C++</code>, <code>PHP</code>, <code>Python</code>,
-                    <code>JavaScript</code>, <code>HTML</code>, <code>CSS</code>,
-                </li>
-                <li>Web Development: <code>Laravel</code>, <code>Wordpress</code>, <code> jQuery</code>,
-                    <code>Twitter Bootstrap</code>,
-                </li>
-                <li>Database: <code>MySQL</code>, <code>Eloquent</code>, </li>
-                <li>Tools &amp; Services: <code>Github</code>, <code>JIRA</code>, <code>MS Office</code>
-                    <code>Composer</code>, <code>Hadoop</code>, <code>Cloudera</code>
-                    <code>Data Visualization </code>
-                </li>
-            </ul>
-
-            <div class="subheading mb-3">Professional Courses</div>
-            <ul class="fa-ul mb-0">
-                <li> <i class="fa-li fa fa-check"></i> Google Project Management: Professional Certificate </code> India
-                    <code> Google </code> Coursera
-                </li>
-                <li> <i class="fa-li fa fa-check"></i> Lean Six Sigma Black Belt <code>RTIAC</code> India
-                    <code> High Tech Park Project </code> Bangladesh.
-                </li>
-                <li> <i class="fa-li fa fa-check"></i> Professional Course on Big Data Analytics By
-                    <code> Nasscom India, </code> <code> Project of LICT Under ICT Division Bangladesh </code>
-                </li>
-                <li> <i class="fa-li fa fa-check"></i> The Complete Business Analysis Fundamentals Course + CERT
-                    <code>Udemy</code>
-                </li>
-                <li> <i class="fa-li fa fa-check"></i> Software Testing Manual And Automation
-                    <code> Selenium Webdriver </code> <code> Udemy </code>
-                </li>
-                <li> <i class="fa-li fa fa-check"></i> Full Stack Web Development with <code> Laravel </code> Framework
-                    <code> Udemy </code>
-                </li>
-            </ul>
-
-
+      </section>
+      <section class="section" id="experience">
+        <div class="section-title">Experience</div>
+        <div class="card">
+          <strong>System Analyst</strong> <span style="color:#6b7280;">@ TechnoVista Ltd.</span><br>
+          <small>June 2021 - Present</small>
+          <ul class="info-list">
+            <li>Initiate, Organize, and Prepare Technical RFP/RFQ Responses</li>
+            <li>Stakeholder Identification & Meeting</li>
+            <li>Requirement Elicitation & Management</li>
+            <li>BRD, SRS Preparation</li>
+            <li>Wireframing and UI Design</li>
+            <li>Solution Design, Client Briefing, and Requirement Approval</li>
+            <li>System Test & UAT</li>
+            <li>Change Request Management</li>
+          </ul>
         </div>
-    </section>
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-            <h2 class="mb-5">Interests</h2>
-            <p>Apart from Being a Professional Software Professional, I like to Enrich My Knowledge in Various Topics,
-                Especially, Those are Related to the Technology. I enjoy Playing Cricket, Watching Movies, and Explore
-                New Places.</p>
-            <p class="mb-0">When Forced indoors, I Follow a Number of Sci-Fi and Fantasy Genre Movies and Television
-                Shows,
-                and I spend a Large Amount of My Free Time Exploring the Latest Technolgy Advancements in the Developing
-                World.</p>
+        <div class="card">
+          <strong>Quality Assurance Engineer</strong> <span style="color:#6b7280;">@ TechnoVista Ltd.</span><br>
+          <small>Aug 2018 - June 2021</small>
+          <ul class="info-list">
+            <li>Test Plan & Test Case Preparation</li>
+            <li>Software Test Execution</li>
+            <li>Bug Reporting & Tracking</li>
+            <li>Technical Documentation</li>
+            <li>End User Support & Training</li>
+          </ul>
         </div>
-    </section>
-
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="recentWork">
-        <div class="my-auto">
-            <h2 class="mb-5">Recent Works</h2>
-
-            <div class="w3-center">
-                <h4> ECO-TOURISM SUNDARBAN For Forest Department of Bangladesh</h4>
-                <div class="gallery">
-
-                    <a class="" target="_blank" href="https://sundarbantourism.bforest.gov.bd/bn">
-                        <img src="assets/images/rivu.jpg" alt="Rivu" width="300" height="200">
-                    </a> <br>
-                    <a class="w3-button w3-teal w3-center" target="_blank"
-                        href="https://sundarbantourism.bforest.gov.bd/bn"> View
-                        View Site </a>
-                    <div class="desc">ECO-TOURISM SUNDARBAN For Forest Department of Bangladesh</div>
-                </div>
-
-
-            </div>
-
-
-
-
-
-
-    </section>
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-            <h2 class="mb-5">Awards &amp; Certifications</h2>
-
-            <ul class="fa-ul mb-0">
-
-                <li> <i class="fa-li fa fa-trophy text-warning"></i> <code> Lean Six Sigma Black Belt </code> - RTIAC
-                    (ASQ, IASSC &amp; CSSC Accredited) By HyperTag BD </li>
-                <a class="w3-button w3-teal w3-center" target="_blank"
-                    href="https://drive.google.com/file/d/1v2Y_HZj6MDAPcfd8LaeVRE1dOAg4OTCf/view?usp=sharing"> Check
-                    online</a> <br>
-            </ul>
-
-            <ul class="fa-ul mb-0">
-
-                <li> <i class="fa-li fa fa-trophy text-warning"></i>
-                    <code> The Completed Software Testing Bootcamp </code> - Udemy
-                </li>
-                <a class="w3-button w3-teal w3-center" target="_blank"
-                    href="https://www.udemy.com/certificate/UC-6d80af1c-ae38-4f20-a33a-cca7faac63d5/"> Check online</a>
-                <br>
-            </ul>
-
-            <ul class="fa-ul mb-0">
-                <li> <i class="fa-li fa fa-trophy text-warning"></i> <code> Data Science Foundation </code> Level 1 & 2
-                    Provided By IBM </li>
-                <a class="w3-button w3-teal w3-center" target="_blank"
-                    href="https://www.youracclaim.com/badges/a6530073-a314-44fa-98e8-fff3a4e2c131"> Check online</a>
-                <br>
-            </ul>
-
-            <ul class="fa-ul mb-0">
-                <li> <i class="fa-li fa fa-trophy text-warning"></i> <code> Data Analysis using EXCEL </code> By Udemy
-                </li>
-                <a class="w3-button w3-teal w3-center" target="_blank"
-                    href="https://www.udemy.com/certificate/UC-2OXCTHS0/"> Check online</a> <br>
-            </ul>
-
-
-
+        <div class="card">
+          <strong>Software Engineer</strong> <span style="color:#6b7280;">@ Wardan Tech Ltd.</span><br>
+          <small>Jan 2018 - Aug 2018</small>
+          <ul class="info-list">
+            <li>Coding, Testing & Debugging</li>
+            <li>Documentation</li>
+          </ul>
         </div>
-
+      </section>
+      <section class="section" id="education">
+        <div class="section-title">Education</div>
+        <div class="card">
+          <strong>Shanto-Mariam University of Creative Technology</strong><br>
+          <span>BSc in Computer Science</span><br>
+          <small>2013 - 2018 | GPA: 3.74/4</small>
         </div>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="">
-
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-
-            <a href="assets/images/Rafayet_BSA_SQA.pdf" class="w3-button w3-light-green w3-padding-large w3-section">
-                <i class="fa fa-download"></i> Download Resume
-            </a>
-
-
-
-
+        <div class="card">
+          <strong>Poyalgacha Degree College</strong><br>
+          <span>Science</span><br>
+          <small>2011 - 2013 | GPA: 3.70/5</small>
         </div>
-    </section>
-
-
-
+        <div class="card">
+          <strong>Poyalgacha High School</strong><br>
+          <span>Science</span><br>
+          <small>2006 - 2009 | GPA: 4.44/5</small>
+        </div>
+      </section>
+      <section class="section" id="skills">
+        <div class="section-title">Skills</div>
+        <div class="card">
+          <ul class="skills-list">
+            <li>C/C++, PHP, Python, JavaScript, HTML, CSS</li>
+            <li>Laravel, Wordpress, Bootstrap</li>
+            <li>MySQL, Eloquent</li>
+            <li>Git, JIRA, MS Office, Composer, Hadoop, Cloudera, Data Visualization</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="awards">
+        <div class="section-title">Awards & Certifications</div>
+        <div class="card">
+          <ul class="awards-list">
+            <li>Lean Six Sigma Black Belt (RTIAC, ASQ, IASSC & CSSC Accredited)</li>
+            <li>Google Project Management: Professional Certificate</li>
+            <li>Big Data Analytics (Nasscom India, LICT Project, ICT Division Bangladesh)</li>
+            <li>The Complete Business Analysis Fundamentals Course + CERT (Udemy)</li>
+            <li>Software Testing Manual And Automation (Selenium Webdriver, Udemy)</li>
+            <li>Full Stack Web Development with Laravel (Udemy)</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="interests">
+        <div class="section-title">Interests</div>
+        <div class="card">
+          <p>Enthusiastic about technology, cricket, movies, and exploring new places. Enjoys sci-fi and fantasy
+            genres, and keeps up with the latest tech advancements.</p>
+        </div>
+      </section>
     </div>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="assets/js/resume.min.js"></script>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: 'your-app-id',
-                autoLogAppEvents: true,
-                xfbml: true,
-                version: 'v2.12'
+  </main>
+  <script>
+    // Smooth scroll and active nav
+    document.querySelectorAll('.sidebar .nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        if (this.hash) {
+          e.preventDefault();
+          const target = document.querySelector(this.hash);
+          if (target) {
+            window.scrollTo({
+              top: target.getBoundingClientRect().top + window.scrollY - 24,
+              behavior: 'smooth'
             });
-        };
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <div class="fb-customerchat" page_id="286087674751097" theme_color="#0084ff"
-        logged_in_greeting="Hello, Let's Start Together" logged_out_greeting="Hi, We can Start after logged in.">
-
-    </div>
-
-
+            document.querySelectorAll('.sidebar .nav a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
+          }
+        }
+      });
+    });
+    // Reading progress bar
+    window.addEventListener('scroll', function() {
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollTop = window.scrollY;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('progressBar').style.width = progress + '%';
+    });
+  </script>
 </body>
 
 </html>
