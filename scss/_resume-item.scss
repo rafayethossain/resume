@@ -1,11 +1,14 @@
 section.resume-section {
-  border-bottom: 1px solid $gray-300;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  border-bottom: 1px solid $gray-200;
+  background: $white;
+  margin-bottom: 2rem;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  box-shadow: 0 2px 8px rgba(34, 40, 49, 0.03);
   .resume-item {
-    .resume-content {}
     .resume-date {
       min-width: none;
+      color: $gray-500;
     }
   }
 }
@@ -13,7 +16,6 @@ section.resume-section {
   section.resume-section {
     min-height: 100vh;
     .resume-item {
-      .resume-content {}
       .resume-date {
         min-width: 18rem;
       }
