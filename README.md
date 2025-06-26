@@ -1,4 +1,3 @@
-
 # Rafayet Hossain | Modern Resume Website
 
 A minimal, modern, and professional resume website built for easy online presence and sharing. Designed for clarity, accessibility, and aesthetics, this site is ready to deploy on GitHub Pages or any static hosting service.
@@ -37,12 +36,12 @@ This is a personal resume/CV website template for IT professionals, business ana
    - Click the "Fork" button on GitHub, or download the ZIP and extract it.
 
 2. **Customize Your Content**
-   - Edit index.html to update your name, profile image, sections, and links.
-   - Replace the profile image in images.
+   - Edit `index.html` to update your name, profile image, sections, and links.
+   - Replace the profile image in `assets/images/`.
    - Update the PDF resume if desired.
 
 3. **Preview Locally**
-   - Open index.html in your browser to see your changes.
+   - Open `index.html` in your browser to see your changes.
 
 4. **Deploy to GitHub Pages**
    - Push your repo to GitHub.
@@ -80,5 +79,4 @@ This project is open source under the MIT License. Feel free to use, modify, and
 
 ---
 
-> Made with ❤️ by Rafayet Hossain
-
+> Made with ❤️
