@@ -25,7 +25,7 @@ This is a modern, responsive, and lavender-themed personal resume/CV website tem
 
 2.  **Customize Content:**
     *   Open `index.html` and replace all placeholder content (e.g., `[Your Name]`, `[Your Profession]`, job descriptions, education details, skills, project details, etc.) with your own information.
-    *   Update the `profile.jpg` (or `images/Rafayet DP.png` if you're using the provided example) with your actual profile picture. Ensure the path in `index.html` is correct.
+    *   Update your profile picture. The template expects an image named `Rafayet DP.png` in the `images/` directory. If you use a different filename or path, remember to update the `<img>` tag in `index.html` accordingly.
     *   Adjust social links and contact information in `index.html`.
 
 3.  **Deploy to GitHub Pages:**
@@ -47,6 +47,12 @@ This is a modern, responsive, and lavender-themed personal resume/CV website tem
         ```
     *   **Enable GitHub Pages:** Go to your GitHub repository, navigate to **Settings > Pages**, and select the `main` branch (or `master`) as the source for GitHub Pages. Your site will typically be live at `https://yourusername.github.io/your-repo-name/` within a few minutes.
 
+## 💻 Technologies Used
+
+*   **HTML5:** For the structure and content of the website.
+*   **CSS3:** For styling and layout, including responsiveness and animations.
+*   **JavaScript:** For interactive elements, scroll animations, and the reading progress bar.
+
 ## 👤 Author Information (Example Content)
 
 This template is currently populated with example data for:
@@ -58,3 +64,7 @@ This template is currently populated with example data for:
 *   **LinkedIn:** [linkedin.com/in/rafayethossain/](https://www.linkedin.com/in/rafayethossain/)
 
 Feel free to replace this information with your own details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details (if applicable, otherwise consider adding one).

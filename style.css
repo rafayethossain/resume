@@ -1,13 +1,13 @@
 :root {
-    --lavender-light: #F0E6FA; /* Slightly warmer light lavender */
-    --lavender-medium: #C8A2C8; /* More distinct, slightly muted purple */
-    --lavender-dark: #8A2BE2; /* Deeper, more vibrant violet */
+    --lavender-light: #E6E6FA; /* Softer, more muted lavender */
+    --lavender-medium: #B0A0D0; /* Muted purple for accents */
+    --lavender-dark: #7A68A6; /* Deeper, professional purple */
     --text-dark: #333333; /* Standard dark grey for good contrast */
     --text-light: #FFFFFF; /* Pure white for light text */
-    --bg-light: #F8F8FF; /* Very light, subtle lavender background */
+    --bg-light: #FDFDFD; /* Near white for a clean background */
     --card-bg: #FFFFFF; /* Pure white for cards */
-    --border-color: #E0E0E0; /* Lighter border */
-    --shadow-color: rgba(0, 0, 0, 0.08); /* Slightly less intense shadow */
+    --border-color: #EEEEEE; /* Very light border */
+    --shadow-color: rgba(0, 0, 0, 0.05); /* Very subtle shadow */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -20,6 +20,7 @@ body {
     display: flex;
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Skip Links */
@@ -68,36 +69,37 @@ body {
     height: 100%;
     overflow-y: auto;
     z-index: 10;
+    justify-content: space-between; /* Distribute space between items */
 }
 
 .profile-card {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Further reduced margin */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 130px; /* Even smaller */
+    height: 130px; /* Even smaller */
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--lavender-dark);
-    margin-bottom: 15px;
-    transition: transform 0.3s ease-in-out;
+    border: 2px solid var(--lavender-dark); /* Even thinner border */
+    margin-bottom: 10px; /* Further reduced margin */
+    transition: transform 0.2s ease-in-out; /* Faster transition */
 }
 
 .profile-pic:hover {
-    transform: scale(1.05);
+    transform: scale(1.02); /* Even less aggressive hover */
 }
 
 .profile-card h1 {
     color: var(--lavender-dark);
-    margin: 10px 0 5px;
-    font-size: 1.8em;
+    margin: 6px 0 3px; /* Further adjusted margins */
+    font-size: 1.6em; /* Even smaller font */
 }
 
 .profile-card .tagline {
     color: var(--text-dark);
-    font-size: 1.1em;
+    font-size: 1.0em; /* Standard font size */
 }
 
 .main-nav ul {
@@ -107,17 +109,17 @@ body {
 }
 
 .main-nav li {
-    margin-bottom: 10px;
+    margin-bottom: 6px; /* Further reduced margin */
 }
 
 .main-nav a {
     display: block;
-    padding: 12px 15px;
+    padding: 8px 12px; /* Further reduced padding */
     color: var(--text-dark);
     text-decoration: none;
-    font-size: 1.1em;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.95em; /* Slightly smaller font */
+    border-radius: 3px; /* Even smaller border-radius */
+    transition: background-color 0.2s, color 0.2s; /* Faster transition */
 }
 
 .main-nav a:hover,
@@ -127,7 +129,7 @@ body {
 }
 
 .main-nav a i {
-    margin-right: 10px;
+    margin-right: 6px; /* Further reduced margin */
     color: var(--lavender-dark);
 }
 
@@ -137,15 +139,16 @@ body {
 }
 
 .social-links {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
-    gap: 15px;
+    gap: 10px; /* Further reduced gap */
+    justify-content: center;
 }
 
 .social-links a {
     color: var(--lavender-dark);
-    font-size: 1.8em;
-    transition: color 0.3s;
+    font-size: 1.6em; /* Even smaller icons */
+    transition: color 0.2s; /* Faster transition */
 }
 
 .social-links a:hover {
@@ -153,18 +156,18 @@ body {
 }
 
 .print-button-container {
-    margin-top: 30px;
+    margin-top: 20px; /* Further reduced margin */
 }
 
 #printButton {
     background-color: var(--lavender-dark);
     color: var(--text-light);
     border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1em;
+    padding: 8px 15px; /* Further reduced padding */
+    border-radius: 3px; /* Even smaller border-radius */
+    font-size: 0.9em; /* Even smaller font */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s; /* Faster transition */
 }
 
 #printButton:hover {
@@ -172,39 +175,39 @@ body {
 }
 
 #printButton i {
-    margin-right: 8px;
+    margin-right: 5px; /* Further reduced margin */
 }
 
 /* Main Content */
 .main-content {
-    margin-left: 320px; /* Sidebar width + padding */
-    padding: 20px;
+    margin-left: 300px; /* Adjusted sidebar width + padding */
+    padding: 20px; /* Reduced padding */
     flex-grow: 1;
 }
 
 .card {
     background-color: var(--card-bg);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px var(--shadow-color);
-    padding: 30px;
-    margin-bottom: 30px;
+    border-radius: 5px; /* Even smaller border-radius */
+    box-shadow: 0 2px 4px var(--shadow-color); /* Even softer shadow */
+    padding: 20px; /* Reduced padding */
+    margin-bottom: 20px; /* Reduced margin */
 }
 
 .card h2 {
     color: var(--lavender-dark);
     margin-top: 0;
-    margin-bottom: 20px;
-    border-bottom: 2px solid var(--lavender-medium);
-    padding-bottom: 10px;
+    margin-bottom: 15px; /* Reduced margin */
+    border-bottom: 1px solid var(--border-color); /* Thinner, lighter border */
+    padding-bottom: 6px; /* Reduced padding */
 }
 
 /* Experience Section */
 .job-entry,
 .education-entry,
 .project-entry {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px dashed var(--border-color);
+    margin-bottom: 15px; /* Further reduced margin */
+    padding-bottom: 10px; /* Further reduced padding */
+    border-bottom: 1px dashed var(--border-color); /* Lighter dashed border */
 }
 
 .job-entry:last-child,
@@ -220,43 +223,43 @@ body {
 .project-entry h3 {
     color: var(--text-dark);
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 3px; /* Further reduced margin */
 }
 
 .job-entry h4,
 .education-entry h4 {
-    color: #666;
+    color: #666; /* Slightly darker grey */
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 3px; /* Further reduced margin */
     font-weight: normal;
 }
 
 .job-entry .duration,
 .education-entry .duration {
-    color: #888;
-    font-size: 0.9em;
-    margin-bottom: 10px;
+    color: #777; /* Slightly darker grey */
+    font-size: 0.8em; /* Even smaller font */
+    margin-bottom: 6px; /* Further reduced margin */
     display: block;
 }
 
 .job-entry ul {
     list-style: disc;
-    margin-left: 20px;
+    margin-left: 15px; /* Further reduced margin */
     padding: 0;
 }
 
 .job-entry li {
-    margin-bottom: 5px;
+    margin-bottom: 3px; /* Further reduced margin */
 }
 
 /* Skills Section */
 .skills-category {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Further reduced margin */
 }
 
 .skills-category h3 {
     color: var(--lavender-dark);
-    margin-bottom: 10px;
+    margin-bottom: 6px; /* Further reduced margin */
 }
 
 .skills-category ul {
@@ -264,20 +267,20 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6px; /* Further reduced gap */
 }
 
 .skills-category li {
     background-color: var(--lavender-medium);
     color: var(--text-light);
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9em;
+    padding: 5px 10px; /* Further reduced padding */
+    border-radius: 12px; /* Even smaller border-radius */
+    font-size: 0.8em; /* Even smaller font */
 }
 
 /* Projects Section */
 .project-entry .project-description {
-    margin-bottom: 10px;
+    margin-bottom: 6px; /* Further reduced margin */
 }
 
 .project-entry .project-link a {
@@ -297,7 +300,7 @@ body {
 }
 
 #contact li {
-    margin-bottom: 10px;
+    margin-bottom: 6px; /* Further reduced margin */
 }
 
 #contact a {
@@ -312,8 +315,8 @@ body {
 /* Section Animations */
 .section-animated {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(10px); /* Even less translation */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Even faster transition */
 }
 
 .section-animated.is-visible {
@@ -324,11 +327,11 @@ body {
 /* Responsive Design */
 @media (max-width: 992px) {
     .sidebar {
-        width: 250px;
+        width: 220px; /* Even smaller */
     }
 
     .main-content {
-        margin-left: 290px;
+        margin-left: 260px; /* Adjusted margin */
     }
 }
 
@@ -341,7 +344,7 @@ body {
         position: relative;
         width: 100%;
         height: auto;
-        box-shadow: 0 2px 5px var(--shadow-color);
+        box-shadow: 0 2px 4px var(--shadow-color); /* Softer shadow */
         padding-bottom: 0;
     }
 
@@ -349,8 +352,8 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap: 6px; /* Further reduced gap */
+        margin-bottom: 15px; /* Further reduced margin */
     }
 
     .main-nav li {
@@ -358,80 +361,80 @@ body {
     }
 
     .main-nav a {
-        padding: 8px 12px;
-        font-size: 0.95em;
+        padding: 6px 9px; /* Further reduced padding */
+        font-size: 0.85em; /* Even smaller font */
     }
 
     .social-links {
-        margin-top: 20px;
+        margin-top: 15px; /* Further reduced margin */
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px; /* Further reduced margin */
     }
 
     .print-button-container {
-        margin-bottom: 20px;
+        margin-bottom: 15px; /* Further reduced margin */
     }
 
     .main-content {
         margin-left: 0;
-        padding-top: 20px;
+        padding-top: 15px; /* Reduced padding */
     }
 
     .profile-card {
-        margin-bottom: 20px;
+        margin-bottom: 15px; /* Further reduced margin */
     }
 }
 
 @media (max-width: 480px) {
     .sidebar {
-        padding: 15px;
+        padding: 10px; /* Further reduced padding */
     }
 
     .profile-pic {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .profile-card h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .profile-card .tagline {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .main-nav a {
-        font-size: 0.9em;
-        padding: 6px 10px;
+        font-size: 0.8em;
+        padding: 4px 7px;
     }
 
     .social-links a {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .card {
-        padding: 20px;
-        margin-bottom: 20px;
+        padding: 15px; /* Further reduced padding */
+        margin-bottom: 15px; /* Further reduced margin */
     }
 
     .card h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .job-entry h3,
     .education-entry h3,
     .project-entry h3 {
-        font-size: 1.1em;
+        font-size: 0.95em;
     }
 
     .job-entry h4,
     .education-entry h4 {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .skills-category li {
-        font-size: 0.8em;
-        padding: 6px 12px;
+        font-size: 0.75em;
+        padding: 4px 8px;
     }
 }
 
@@ -441,62 +444,120 @@ body {
         display: block;
         background-color: #fff;
         color: #000;
-        font-size: 12pt;
+        font-size: 10pt; /* Slightly smaller font for print */
+        -webkit-print-color-adjust: exact; /* Ensure background colors are printed */
+        print-color-adjust: exact;
     }
 
-    .sidebar {
-        display: none;
+    /* General reset for print to minimize blank spaces */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    .progress-container {
-        display: none;
+    .sidebar,
+    .progress-container,
+    #printButton,
+    .social-links,
+    .main-nav,
+    .profile-card,
+    .skip-link {
+        display: none !important; /* Use !important to ensure these are hidden */
     }
 
     .main-content {
         margin-left: 0;
-        padding: 0;
+        padding: 0.5in; /* Add some padding to the main content for print */
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    /* Ensure all content is visible and not clipped */
+    .main-content,
+    .card,
+    .job-entry,
+    .education-entry,
+    .project-entry,
+    .skills-category {
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
     }
 
     .card {
         box-shadow: none;
-        border: 1px solid #eee;
-        margin-bottom: 15px;
-        page-break-inside: avoid;
+        border: none; /* Remove border for cleaner look */
+        margin-bottom: 0.15in; /* Slightly less margin */
+        padding: 0.2in; /* Reduced padding for print */
+        page-break-inside: avoid; /* Keep cards together */
+        page-break-after: auto; /* Allow page breaks after cards */
     }
 
     .card h2 {
         color: #000;
-        border-bottom: 1px solid #ccc;
+        border-bottom: none; /* Remove border under headings */
         padding-bottom: 5px;
         margin-bottom: 10px;
+        font-size: 1.1em; /* Adjust heading size for print */
     }
 
     .job-entry,
     .education-entry,
     .project-entry {
         border-bottom: none;
-        margin-bottom: 10px;
+        margin-bottom: 0.1in; /* Even less margin */
+        padding-bottom: 0;
+        page-break-inside: avoid; /* Keep job entries together */
+    }
+
+    .job-entry:last-child,
+    .education-entry:last-child,
+    .project-entry:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
         padding-bottom: 0;
     }
 
     .job-entry h3,
     .education-entry h3,
     .project-entry h3 {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
 
     .job-entry h4,
     .education-entry h4 {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .job-entry .duration,
     .education-entry .duration {
-        font-size: 0.9em;
+        font-size: 0.8em;
+        margin-bottom: 5px; /* Reduced margin */
+    }
+
+    .job-entry ul {
+        list-style: disc;
+        margin-left: 15px; /* Adjusted margin */
+        padding: 0;
+    }
+
+    .job-entry li {
+        margin-bottom: 3px; /* Reduced margin */
+    }
+
+    .skills-category {
+        margin-bottom: 0.15in; /* Reduced margin */
+    }
+
+    .skills-category h3 {
+        font-size: 1.0em;
+        margin-bottom: 5px; /* Reduced margin */
     }
 
     .skills-category ul {
-        display: block;
+        display: block; /* Stack skills vertically for print */
+        list-style: none;
+        padding: 0;
     }
 
     .skills-category li {
@@ -504,27 +565,66 @@ body {
         color: #000;
         padding: 0;
         border-radius: 0;
-        display: inline-block;
-        margin-right: 10px;
+        display: block; /* Each skill on a new line */
+        margin-bottom: 3px; /* Reduced margin */
+        border: none; /* Remove borders for cleaner look */
+    }
+
+    /* Contact Section */
+    #contact ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #contact li {
         margin-bottom: 5px;
-        border: 1px solid #ccc;
-        padding: 2px 5px;
     }
 
-    #printButton {
-        display: none;
+    /* Ensure lists don't create extra space */
+    ul {
+        margin: 0;
+        padding: 0;
     }
 
-    .social-links {
-        display: none;
+    li {
+        margin-bottom: 0;
     }
 
-    .main-nav {
-        display: none;
+    /* Adjust font sizes slightly more if needed for density */
+    h2 {
+        font-size: 1.1em;
     }
 
-    .profile-card {
-        display: none;
+    h3 {
+        font-size: 1.0em;
+    }
+
+    h4 {
+        font-size: 0.9em;
+    }
+
+    p, li {
+        font-size: 0.9em;
+    }
+
+    /* Ensure links are printed clearly */
+    a {
+        color: #000; /* Black color for links */
+        text-decoration: none; /* No underline by default */
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")"; /* Show URL for links */
+        font-size: 8pt;
+        word-break: break-all;
+    }
+
+    /* Handle images for print */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center images */
     }
 
     /* Ensure content doesn't get cut off */
